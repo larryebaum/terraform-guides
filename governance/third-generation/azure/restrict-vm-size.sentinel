@@ -9,7 +9,7 @@ import "tfplan-functions" as plan
 
 # Allowed Azure VM Sizes
 # Include null to allow missing values
-allowed_sizes = ["Standard_A1", "Standard_A2", "Standard_D1_v2", "Standard_D2_v2"]
+allowed_sizes = ["Standard_A1", "Standard_A2", "Standard_D1_v2", "Standard_D2_v2", "Standard_DS1_V2"]
 
 # Get all Azure VMs
 allAzureVMs = plan.find_resources("azurerm_virtual_machine")
